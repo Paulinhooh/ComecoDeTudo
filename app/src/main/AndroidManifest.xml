@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ComecoDeTudo"
+        tools:targetApi="31">
+
+        <!-- Tela inicial AUTORAIO -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ComecoDeTudo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Cadastro de dados pessoais -->
+        <activity
+            android:name=".CadastroActivity"
+            android:exported="true" />
+
+        <!-- Contato e endereço -->
+        <activity
+            android:name=".ContatoActivity"
+            android:exported="true" />
+
+        <!-- Análise de perfil -->
+        <activity
+            android:name=".AnaliseActivity"
+            android:exported="true" />
+
+        <!-- Simulado de veículos -->
+        <activity
+            android:name=".SimuladoActivity"
+            android:exported="true" />
+
+        <!-- Tela de financiamento -->
+        <activity
+            android:name=".FinanciamentoActivity"
+            android:exported="true" />
+
+        <!-- Tela de aprovação do crédito -->
+        <activity
+            android:name=".AprovacaoActivity"
+            android:exported="true" />
+
+        <!-- Tela final - aprovado -->
+        <activity
+            android:name=".FinalAprovadoActivity"
+            android:exported="true" />
+
+        <!-- Tela final - reprovado -->
+        <activity
+            android:name=".FinalReprovadoActivity"
+            android:exported="true" />
+
+        <!-- Resumo final de todos os dados -->
+        <activity
+            android:name=".ResumoActivity"
+            android:exported="true" />
+
+    </application>
+</manifest>

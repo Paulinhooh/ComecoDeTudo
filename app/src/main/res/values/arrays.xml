@@ -1,0 +1,64 @@
+<resources>
+    <string-array name="generos">
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Prefiro não informar</item>
+    </string-array>
+
+    <string-array name="marcas_carro">
+        <item>AUDI</item>
+        <item>CHEVROLET</item>
+        <item>CITROËN</item>
+        <item>FIAT</item>
+        <item>FORD</item>
+        <item>HONDA</item>
+        <item>HYUNDAI</item>
+        <item>PEUGEOT</item>
+        <item>RENAULT</item>
+        <item>TOYOTA</item>
+        <item>VOLKSWAGEN</item>
+    </string-array>
+
+    <string-array name="estado_civil_opcoes">
+        <item>Solteiro(a)</item>
+        <item>Casado(a)</item>
+        <item>Divorciado(a)</item>
+        <item>Viúvo(a)</item>
+        <item>União Estável</item>
+    </string-array>
+
+
+    <string-array name="profissoes">
+        <item>Autônomo</item>
+        <item>Empregado CLT</item>
+        <item>Servidor Público</item>
+        <item>Empresário</item>
+        <item>Aposentado</item>
+        <item>Estudante</item>
+        <item>Desempregado</item>
+        <item>Outro</item>
+    </string-array>
+
+    <string-array name="veiculos">
+        <item>Sim, carro e moto</item>
+        <item>Sim, apenas carro</item>
+        <item>Sim, apenas moto</item>
+        <item>Não</item>
+    </string-array>
+
+    <string-array name="sim_nao">
+        <item>Sim</item>
+        <item>Não</item>
+    </string-array>
+
+    <string-array name="bancos">
+        <item>Bradesco</item>
+        <item>Caixa</item>
+        <item>Itaú</item>
+        <item>Santander</item>
+        <item>Safra</item>
+        <item>Banco do Brasil</item>
+        <item>Outro</item>
+    </string-array>
+
+</resources>

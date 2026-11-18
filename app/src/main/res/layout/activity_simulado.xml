@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DESTA FORMA PODEMOS DAR INÍCIO AO SIMULADO:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Pergunta 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUAL A MARCA DO CARRO QUE O SR(a) DESEJA COMPRAR?"
+            android:textStyle="bold"
+            style="@style/TextoPergunta"/>
+
+        <Spinner
+            android:id="@+id/spinnerMarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/marcas_carro"
+            android:background="@drawable/bg_spinner_estado"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Pergunta 2 -->
+        <TextView
+            android:id="@+id/textoModelos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECIONE O MODELO:"
+            style="@style/TextoPergunta"
+            android:visibility="gone"/>
+
+        <Spinner
+            android:id="@+id/spinnerModelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_spinner_estado"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"/>
+
+        <!-- Preço e Ano -->
+        <TextView
+            android:id="@+id/textoPrecoAno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:padding="8dp"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_spinner_estado" />
+
+        <!-- Botão -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botaoProximoResumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AVANÇAR"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorOnPrimary"/>
+    </LinearLayout>
+</ScrollView>

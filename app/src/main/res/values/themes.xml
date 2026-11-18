@@ -1,0 +1,79 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.ComecoDeTudo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Cores de marca -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+
+        <!-- Superfície e fundo -->
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <item name="colorOutline">@color/colorOutline</item>
+
+        <!-- Botões e ripple -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="materialButtonStyle">@style/Widget.MyApp.Button.Primary</item>
+    </style>
+
+    <!-- Estilo padrão dos botões de ação -->
+    <style name="Widget.MyApp.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="rippleColor">@color/colorRipple</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextoPergunta">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+
+    <!-- Título grande -->
+    <style name="TextAppearance.MyApp.Title" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">@color/colorOnSurface</item>
+    </style>
+
+    <!-- Subtítulo/descrição -->
+    <style name="TextAppearance.MyApp.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/colorOnSurface</item>
+    </style>
+
+    <style name="CampoTransparente" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxBackgroundColor">#80FFFFFF</item> <!-- Fundo translúcido -->
+        <item name="boxStrokeColor">#A9A9A9</item>       <!-- Cor padrão da borda -->
+        <item name="hintTextColor">#80000000</item>      <!-- Cor da dica -->
+        <item name="android:textColorHint">#80000000</item>
+
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textSize">16sp</item>
+
+        <!-- Quando o campo é focado, ele usa colorControlActivated -->
+        <item name="colorControlActivated">#2196F3</item> <!-- Azul moderno -->
+
+        <!-- Largura da borda -->
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+
+        <!-- Cantos arredondados -->
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+
+        <!-- Sombra suave -->
+        <item name="android:elevation">4dp</item>
+    </style>
+</resources>

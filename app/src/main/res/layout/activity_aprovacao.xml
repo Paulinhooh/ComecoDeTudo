@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/layoutPrincipal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚗 PROCESSO DE APROVAÇÃO AUTORAIO ⚡"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Valor do veículo com desconto -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O VALOR DO VEÍCULO COM DESCONTO É:"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/campoValorDesconto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:background="@drawable/bg_spinner_estado"
+            android:textColor="#000"
+            android:padding="10dp" />
+
+        <!-- Salário -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DIGITE O VALOR DO SEU SALÁRIO:"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/campoSalario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 2500,00"
+            android:inputType="numberDecimal"
+            android:background="@drawable/bg_spinner_estado"
+            android:padding="10dp"
+            android:textColor="#000" />
+
+        <!-- Parcelas -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUANTAS VEZES O SR(a) DESEJA PARCELAR:"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/campoParcelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 48"
+            android:inputType="number"
+            android:background="@drawable/bg_spinner_estado"
+            android:padding="10dp"
+            android:textColor="#000" />
+
+        <!-- Botão calcular -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botaoCalcularAprovacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VERIFICAR APROVAÇÃO"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white" />
+
+        <!-- Resultado -->
+        <TextView
+            android:id="@+id/textoResultadoAprovacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_spinner_estado" />
+    </LinearLayout>
+</ScrollView>

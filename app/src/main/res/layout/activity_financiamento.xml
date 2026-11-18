@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Título principal -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIMULADOR DE FINANCIAMENTO AUTORAIO ⚡"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Valor do veículo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUAL O VALOR DO VEÍCULO DE ACORDO COM A TABELA?"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/campoValorVeiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 67900"
+            android:inputType="numberDecimal"
+            android:background="@drawable/bg_spinner_estado"
+            android:padding="10dp"
+            android:textColor="#000000" />
+
+        <!-- Quantidade -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUANTIDADE DE VEÍCULOS QUE O SR(a) DESEJA COMPRAR?"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/campoQuantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 1"
+            android:inputType="number"
+            android:background="@drawable/bg_spinner_estado"
+            android:padding="10dp"
+            android:textColor="#000000" />
+
+        <!-- Entrada -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUAL O VALOR QUE O SR(a) PRETENDE DAR DE ENTRADA?"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/campoEntrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 10000"
+            android:inputType="numberDecimal"
+            android:background="@drawable/bg_spinner_estado"
+            android:padding="10dp"
+            android:textColor="#000000" />
+
+        <!-- Parcelas -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DE 2 A 96 PARCELAS, EM QUANTAS VEZES PRETENDE FINANCIAR?"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/campoParcelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 48"
+            android:inputType="number"
+            android:background="@drawable/bg_spinner_estado"
+            android:padding="10dp"
+            android:textColor="#000000" />
+
+        <!-- Botão calcular -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botaoCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALCULAR"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white" />
+
+
+        <!-- Resultado -->
+        <TextView
+            android:id="@+id/textoResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_spinner_estado" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botaoFinalizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AVANÇAR"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+</ScrollView>
